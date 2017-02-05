@@ -1,0 +1,148 @@
+
+ body {
+    overflow-x: hidden;
+
+     background-image: url(../pics/charminar2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+ }
+
+header
+{
+    background-image: url(../pics/sky-blue-color-wallpaper-1.jpg);
+    color:deepskyblue;
+    text-align: center;
+}
+
+.glyphmenu
+{
+    text-align: center;
+    background-color: deepskyblue;
+}
+.menuicn
+{
+    font-size: 30px;
+    color: black;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 12em;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    border-top: 2px deepskyblue;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    }
+
+
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin-top: 4.5em;
+    padding: 0;
+    color: deepskyblue;
+}
+
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-list
+
+{
+     color:white;
+}
+
+
+.sidebar-heading
+{
+    color:deepskyblue;
+}
+.sicn
+{
+    color:deepskyblue;
+}
+
+#map
+{
+    height:1024px;
+    margin-left: 30px;
+}
+#pano
+{
+    width:500px;
+    height:400px;
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 270px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    
+}
+
+
+
+

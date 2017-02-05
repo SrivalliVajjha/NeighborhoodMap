@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Ewert|Gentium+Book+Basic" rel="stylesheet">
+</head>
+
+<body>
+    <header class="nav-bar navbar-fixed-top">
+
+        <h1>HYDERABAD</h1>
+        <h2>CITY OF PEARLS</h2>
+        <div class="col-lg-12 glyphmenu">
+            <span class="glyphicon glyphicon-menu-hamburger menuicn" id="menu-toggle"></span>
+        </div>
+    </header>
+
+    <!-- /#sidebar-wrapper -->
+    <div id="wrapper" class="toggled">
+        <aside id="sidebar-wrapper">
+            <h4 class="sidebar-heading">Exploring Hyderabad.....</h4>
+            <input type="search" placeholder="Charminar" data-bind="textInput: OnClickPlace">
+            <ul class="sidebar-nav" data-bind="foreach: search">
+                <li class="sidebar-list" data-bind="text: title, click: $parent.currentMarker"></li>
+            </ul>
+        </aside>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" id="map"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/knockout.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=drawing,geometry&key=AIzaSyCHYoKk04WlKBdVd8yRHYqO90lA87e3-Yg&callback=initMap" onerror="mapError()"></script>
+
+</body>
+
+</html>
